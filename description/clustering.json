@@ -1,0 +1,83 @@
+{
+    "contents": [
+        {
+        "model_name": "kmeans_v0.0.1",
+        "version": "0.0.1",
+        "type": "clustering",
+        "owner": "mlexchange team",
+        "image_name": "ghcr.io/mlexchange/mlex_clustering",
+        "image_tag": "main",
+        "conda_env": "mlex_clustering",
+        "application": [
+            "latent_space_explorer"
+        ],
+        "description": "Clustering with KMeans",
+        "gui_parameters": [
+            {
+                "type": "int",
+                "name": "ncluster-dropdown-menu",
+                "title": "Number of clusters",
+                "value": 8,
+                "param_key": "n_clusters"
+            }
+        ],
+        "python_file_name": "mlex_clustering/src/clustering_kmeans.py",
+        "public": false
+        },
+        {
+        "model_name": "dbscan_v0.0.1",
+        "version": "0.0.1",
+        "type": "clustering",
+        "owner": "mlexchange team",
+        "image_name": "ghcr.io/mlexchange/mlex_clustering",
+        "image_tag": "main",
+        "conda_env": "mlex_clustering",
+        "application": [
+            "latent_space_explorer"
+        ],
+        "description": "Clustering with DBSCAN",
+        "gui_parameters": [
+            {
+                "type": "float",
+                "name": "eps",
+                "title": "Neighborhood of a point",
+                "value": 0.5,
+                "param_key": "eps"
+            },
+            {
+                "type": "int",
+                "name": "minsample",
+                "title": "Minimum number of points",
+                "value": 5,
+                "param_key": "min_samples"
+            }
+        ],
+        "python_file_name": "mlex_clustering/src/clustering_dbscan.py",
+        "public": false
+        },
+        {
+        "model_name": "hdbscan_v0.0.1",
+        "version": "0.0.1",
+        "type": "clustering",
+        "owner": "mlexchange team",
+        "image_name": "ghcr.io/mlexchange/mlex_clustering",
+        "image_tag": "main",
+        "conda_env": "mlex_clustering",
+        "application": [
+            "latent_space_explorer"
+        ],
+        "description": "Clustering with HDBSCAN",
+        "gui_parameters": [
+            {
+                "type": "int",
+                "name": "mincluster-size",
+                "title": "Minimum cluster size",
+                "value": 5,
+                "param_key": "min_cluster_size"
+            }
+        ],
+        "python_file_name": "mlex_clustering/src/clustering_hdbscan.py",
+        "public": false
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+[project]
+name = "mlex_clustering"
+version = "0.0.1"
+authors = [
+    { name="Tanny Chavez", email="tanchavez@lbl.gov"}
+]
+description = "Clustering with scikit-learn"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "dask==2024.3.0",
+    "pydantic",
+    "scikit-learn",
+    "numpy<2.0.0",
+    "pandas",
+    "pyarrow",
+    "tiled[client]==0.1.0a118",
+]
+
+[project.optional-dependencies]
+# These are required for developing the package (running the tests, building
+# the documentation) but not necessarily required for _using_ it.
+dev = [
+    "flake8",
+    "pre-commit",
+    "pytest",
+]
+
+[project.urls]
+Homepage = "https://github.com/mlexchange/mlex_clustering"
+Issues = "https://github.com/mlexchange/mlex_clustering/issues/"
+
+[tool.isort]
+profile = "black"
