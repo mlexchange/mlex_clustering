@@ -1,5 +1,5 @@
 # mlex_clustering
-Clustering algorithms using DBSCAN, HDBSCAN and KMeans
+Clustering algorithms using DBSCAN, HDBSCAN and KMeans.
 
 ## Getting started
 
