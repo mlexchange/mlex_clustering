@@ -13,7 +13,8 @@ classifiers = [
 ]
 
 dependencies = [
-    "dask==2024.3.0",
+    "dask==2024.8.2",
+    "dask-expr==v1.1.12",
     "pydantic",
     "scikit-learn",
     "numpy<2.0.0",
